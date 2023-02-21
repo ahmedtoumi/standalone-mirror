@@ -1,7 +1,11 @@
 # standalone-mirror
 
-This docker image allow you to mirror Avro, String/JSON or Byte data from a Source to Target Kafka Clusters. <br />
-***IMPORTANT***  : **Until this current version, only String KAFKA message key is accepted => other types will be soon available**
+This docker image allow you to mirror Avro, String/JSON or Byte data from a Source to Target Kafka Clusters with one application. <br />
+*You don't need anymore to create a dedicated mirror instance for each DATA TYPE.* <br />
+
+***IMPORTANT***  : <br />
+* **Until this current version, only String KAFKA message key is accepted => other types will be soon available** <br />
+* **Json SCHEMA & PROTOBUF will be available soon too**
 
 https://hub.docker.com/r/kafkaetech/standalone-mirror
 
