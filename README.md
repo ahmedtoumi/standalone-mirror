@@ -15,10 +15,10 @@ https://hub.docker.com/r/kafkaetech/standalone-mirror
 |----------|:-------------:|------:|
 | SOURCE_BOOTSTRAP_SERVER | Bootstrap server of source Kafka cluster | localhost:9092 |
 | SOURCE_GROUP_ID | The group ID to be used by the consumer on source Kafka cluster | `avro-mirror-group-id` |
-| SOURCE_SCHEMA_REGISTRY_URL | The Schema Registry URL of the source Kafka cluster | http://localhost:8081 |
+| SOURCE_SCHEMA_REGISTRY_URL | Optional (from `1.0.1`) : The Schema Registry URL of the source Kafka cluster |  |
 | SOURCE_WHITELIST_TOPICS | The comma separated list of the topics to be mirrored from the source cluster. Data types on source topics could be : AVRO, String (simple text or JSON) or Bytes. Before 1.0.0 version, only AVRO is allowed | `input_topic_1,input_topic_2` |
 | TARGET_BOOTSTRAP_SERVER | Bootstrap server of the target Kafka cluster | localhost:9092 |
-| TARGET_SCHEMA_REGISTRY_URL | The Schema Registry URL of the target Kafka cluster | http://localhost:8081 |
+| TARGET_SCHEMA_REGISTRY_URL | Optional (from `1.0.1`): The Schema Registry URL of the target Kafka cluster |  |
 | TARGET_TOPIC_PREFIX | The default prefix to be used on the target cluster. Ex: If the source topic is `input_topic` and the prefix is `west1-` the target topic will be `west1-input_topic` | |
 |IGNORE_PRODUCING_ERROR|Log and ignore errors on producing messages to target cluster|true|
 
