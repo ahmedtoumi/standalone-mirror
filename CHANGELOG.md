@@ -11,3 +11,6 @@ This is a standalone application that make easyier the implementation of mirrori
 * 2 possible type of error handling strategy :
   * Log & Continue, using `IGNORE_PRODUCING_ERROR=true`
   * Log & Fail, using `IGNORE_PRODUCING_ERROR=false`
+
+## V1.0.1
+* Enhancement : setting the `SOURCE_SCHEMA_REGISTRY_URL` and `TARGET_SCHEMA_REGISTRY_URL` as Optional
